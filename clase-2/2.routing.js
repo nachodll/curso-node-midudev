@@ -18,7 +18,6 @@ const processRequest = (req, res) => {
       }
 
     case 'POST':
-      console.log('post')
       switch (url) {
         case ('/pokemon'): {
           let body = ''
