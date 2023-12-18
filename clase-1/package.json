@@ -1,0 +1,28 @@
+{
+  "name": "curso-node-midudev",
+  "version": "1.0.0",
+  "description": "buen curso",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nachodll/curso-node-midudev.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nachodll/curso-node-midudev/issues"
+  },
+  "homepage": "https://github.com/nachodll/curso-node-midudev#readme",
+  "dependencies": {
+    "picocolors": "^1.0.0"
+  },
+  "devDependencies": {
+    "standard": "^17.1.0"
+  },
+  "eslintConfig": {
+    "extends": "standard"
+  }
+}

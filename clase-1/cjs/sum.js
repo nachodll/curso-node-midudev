@@ -1,5 +1,5 @@
-function sum (a, b){
-    return a + b
+function sum (a, b) {
+  return a + b
 }
 
 // 1ª opción: sistema de módulos (CommonJS)
@@ -9,5 +9,5 @@ function sum (a, b){
 // 2ª opción: con dict (tmb CommonJS)
 // Obliga a usar el mismo nombre al importar
 module.exports = {
-    sum
+  sum
 }
