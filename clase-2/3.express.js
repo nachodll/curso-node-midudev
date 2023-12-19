@@ -1,17 +1,16 @@
 const express = require('express')
-const appExpress = express()
-
 const dittoJSON = require('./pokemon/ditto.json')
-
-appExpress.disable('x-powered-by')
 
 const PORT = process.env.PORT ?? 1234
 
-appExpress.get('/pokemon/ditto', (req, res) => {
-  res.json(dittoJSON)
-})
+const appExpress = express()
+appExpress.disable('x-powered-by')
 
-appExpress.post('/pokemon', (req, res) => {
+appExpress.use((req, res, next) => {
+  if (req.method !== 'POST') return next()
+  if (req.headers['content-type'] !== 'application/json') return next()
+
+  // Aqui solo llegan req con POST y json
   let body = ''
 
   // escuchar el evento data
@@ -22,8 +21,17 @@ appExpress.post('/pokemon', (req, res) => {
   req.on('end', () => {
     const data = JSON.parse(body)
     data.timestamp = Date.now()
-    res.status(201).send(data)
+    req.body = data
+    next()
   })
+})
+
+appExpress.get('/pokemon/ditto', (req, res) => {
+  res.json(dittoJSON)
+})
+
+appExpress.post('/pokemon', (req, res) => {
+  res.status(201).json(req.body)
 })
 
 // La ultima a la que va a llegar
