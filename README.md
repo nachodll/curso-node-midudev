@@ -4,6 +4,9 @@
 - **zod** for api validations
 - **cors** as middleware
 - **mysql2** for db connection
+- **dotenv** for loading enviroment vars
+- **morgan** as logger
+- **socket.io** for web sockets
 
 # Deploy
 - API deployed with [fl0](https://app.fl0.com/nacho-workspace/curso-node-midudev)
