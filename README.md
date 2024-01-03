@@ -6,7 +6,8 @@
 - **mysql2** for db connection
 
 # Deploy
-API is deployed at https://curso-node-midudev-deploy-dev-szze.2.ie-1.fl0.io
+- API deployed with [fl0](https://app.fl0.com/nacho-workspace/curso-node-midudev)
+- Database deployed with [PlanetScale](https://app.planetscale.com/nachodoradollamas/moviesdb)
 
 # Other tools used
 - **DBngin** to set up the database
