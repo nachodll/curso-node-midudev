@@ -12,7 +12,7 @@
 # Deploy
 - API deployed with [fl0](https://app.fl0.com/nacho-workspace/curso-node-midudev)
 - Database deployed with [PlanetScale](https://app.planetscale.com/nachodoradollamas/moviesdb)
-- Last database at [Turso]()
+- Last database at [Turso](https://turso.tech/app/databases)
 
 # Other tools used
 - **DBngin** to set up the database
