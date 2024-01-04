@@ -7,10 +7,12 @@
 - **dotenv** for loading enviroment vars
 - **morgan** as logger
 - **socket.io** for web sockets
+- **@libsql/client** for turso connection
 
 # Deploy
 - API deployed with [fl0](https://app.fl0.com/nacho-workspace/curso-node-midudev)
 - Database deployed with [PlanetScale](https://app.planetscale.com/nachodoradollamas/moviesdb)
+- Last database at [Turso]()
 
 # Other tools used
 - **DBngin** to set up the database
